@@ -472,11 +472,10 @@
   <a onclick="showSection('walkInPriceSection'); closeMenu();">💰 Walk-In Price List</a>
 
   <div class="opening-hours">
-    <h3>APPOINTMENTS:</h3>
-    <p>Mon, Wed, Fri: 10:00 AM – 7:00 PM</p>
-    <h3 style="margin-top:6px;">WALK-INS:</h3>
-    <p>Tue, Thu, Sat: 10:00 AM – 6:00 PM</p>
-    <p>Sunday: Closed</p>
+    <h3>APPOINTMENTS & WALK-INS:</h3>
+    <p>Mon – Sat: 12:00 PM – 9:00 PM</p>
+    <p>Sunday: 1:00 PM – 8:00 PM</p>
+    <p>Open Every Day ✅</p>
   </div>
 
   <a class="menu-action-btn" onclick="showUserBookings(); closeMenu();" href="javascript:void(0);">MY BOOKINGS</a>
@@ -544,14 +543,14 @@
     <button onclick="closePaymentInfo()" style="position:sticky; top:0; right:0; float:right; background:#fff; border:none; font-size:24px; cursor:pointer; z-index:10001; color:#999;">✖</button>
     <h3 style="margin:10px 0 18px; color:#1a1a1a; text-align:center; font-family:'Bebas Neue',cursive; letter-spacing:2px;">PAYMENT INFO</h3>
     <div style="border:1px solid #ddd; border-radius:10px; padding:14px; background:white; box-shadow:0 2px 5px rgba(0,0,0,0.08); border-left:4px solid var(--accent); color:#000;">
-      <h3 style="margin-top:0; color:#000; font-size:17px; font-family:'Bebas Neue',cursive; letter-spacing:1px;">🏦 Scotiabank Account Details</h3>
-      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>👤 First Name:</strong> JEROME</p>
-      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>👤 Last Name:</strong> LECKY</p>
-      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🏦 Bank Name:</strong> Scotiabank</p>
-      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🔢 Branch/Transit Number:</strong> 60145</p>
+      <h3 style="margin-top:0; color:#000; font-size:17px; font-family:'Bebas Neue',cursive; letter-spacing:1px;">🏦 NCB Account Details</h3>
+      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>👤 First Name:</strong> NICOYAN</p>
+      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>👤 Last Name:</strong> WALKER</p>
+      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🏦 Bank Name:</strong> NCB</p>
+      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🔢 Account Number:</strong> 304793570</p>
       <p style="margin:6px 0; font-size:14px; color:#000;"><strong>💳 Account Type:</strong> SAVINGS</p>
-      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🔢 Account Number:</strong> 000901858</p>
-      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>💱 Account Currency:</strong> JMD</p>
+      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🏢 Branch:</strong> Half Way Tree</p>
+      <p style="margin:6px 0; font-size:14px; color:#000;"><strong>🔢 Branch Code:</strong> 030</p>
     </div>
   </div>
 </div>
@@ -560,10 +559,10 @@
 <div class="content-section" id="bookingSection">
   <h1>BOOK YOUR CUT</h1>
   <div style="max-width:420px; margin:0 auto 16px; background:#1a1a1a; border-left:4px solid var(--accent); border-radius:6px; padding:12px 16px; font-size:13px; color:#ccc; line-height:1.6;">
-    📅 <strong style="color:var(--accent);">Appointments:</strong> Mondays, Wednesdays &amp; Fridays only<br>
-    🚶 <strong style="color:var(--accent);">Walk-ins:</strong> Tuesdays, Thursdays &amp; Saturdays<br>
-    ⛔ No line-ups on appointment days<br>
-    ⏱ <strong style="color:#e74c3c;">10-minute grace period</strong> — late arrivals lose their spot
+    📅 <strong style="color:var(--accent);">Appointments & Walk-ins:</strong> Any Day<br>
+    🕛 <strong style="color:var(--accent);">Mon – Sat:</strong> 12:00 PM – 9:00 PM<br>
+    🕐 <strong style="color:var(--accent);">Sunday:</strong> 1:00 PM – 8:00 PM<br>
+    ⏱ <strong style="color:#e74c3c;">15-minute grace period</strong> — late arrivals lose their spot
   </div>
   <form onsubmit="submitBooking(event)">
     <label for="name">Name:</label>
@@ -666,74 +665,104 @@
 <div class="content-section" id="walkInPriceSection">
   <h1 style="font-family:'Bebas Neue',cursive; letter-spacing:2px; color:var(--accent); text-align:center; margin-top:80px; font-size:30px;">Walk-In Price List</h1>
   <div style="max-width:420px; margin:0 auto 24px; background:#1a1a1a; border-left:4px solid var(--accent); border-radius:6px; padding:10px 16px; font-size:13px; color:#ccc; line-height:1.6;">
-    🚶 <strong style="color:var(--accent);">Walk-ins:</strong> Tuesdays, Thursdays &amp; Saturdays &nbsp;|&nbsp; 10:00 AM – 6:00 PM
+    🚶 <strong style="color:var(--accent);">Walk-ins:</strong> Any Day &nbsp;|&nbsp; Mon–Sat: 12:00 PM – 9:00 PM &nbsp;|&nbsp; Sun: 1:00 PM – 8:00 PM
   </div>
 
   <div style="max-width:420px; margin:0 auto; padding:0 16px 80px;">
 
-    <!-- Single Walk-In Price List Card -->
+    <!-- ADULTS 18+ Walk-In & Appointment Price List -->
     <div style="background:#1a1a1a; border-radius:10px; overflow:hidden; margin-bottom:16px; border:1px solid rgba(200,25,45,0.3);">
       <div style="background:var(--accent); padding:10px 16px;">
-        <span style="font-family:'Bebas Neue',cursive; letter-spacing:2px; font-size:15px; color:#1a1a1a;">💈 WALK IN PRICE LIST</span>
+        <span style="font-family:'Bebas Neue',cursive; letter-spacing:2px; font-size:15px; color:#1a1a1a;">💈 ADULTS 18+ — WALK-IN &amp; APPOINTMENT</span>
       </div>
       <div style="padding:12px 16px;">
+        <!-- Cuts -->
+        <div style="margin-bottom:6px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--accent);">Haircuts</div>
+        <?php foreach([
+          ['All Round Fade','$2,500'],['Taper Fade','$2,500'],['One Level','$2,500'],
+          ['Bald Cut','$2,500'],['Mohawk','$2,500'],['Flat Top','$2,500'],
+          ['Big Chop','$2,500'],['Buzz Cut','$2,500'],['Low Fade','$2,500'],
+          ['Skin Fade','$2,500'],["Ladies Cut",'$2,500']
+        ] as $item): ?>
+        <?php endforeach; ?>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">All Round Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Taper Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">One Level</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Bald Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Mohawk</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Flat Top</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Big Chop</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Buzz Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Low Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Skin Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Ladies Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <!-- Grooming -->
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Grooming</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Line Up &amp; Shave</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Eyebrows Shave</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Eyebrow Wax</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Tint Eyebrows</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,000</span></div>
+        <!-- Lashes -->
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Lashes</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Singles Eye Lash</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$3,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Clusters</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$4,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Strip</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <!-- Extra -->
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Optional Extra</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:14px;color:#f0f0f0;">Custom Design</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$500+</span></div>
+      </div>
+    </div>
 
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Haircut &amp; Taper with Eyebrow &amp; Dye</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$2,700</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Celebrity Big Chop</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$3,000</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Taper &amp; Fades Only with Spray Dye</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$2,300</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Line Ups</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$1,000</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Teenagers</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$2,000</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Kids (3–12)</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$1,500</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Female Haircuts</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$2,500</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Eyebrow</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$500</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Premium Eyebrow Tinting with Concealer</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$1,000</span>
-        </div>
+    <!-- TEENS 13–17 Walk-In Price List -->
+    <div style="background:#1a1a1a; border-radius:10px; overflow:hidden; margin-bottom:16px; border:1px solid rgba(200,25,45,0.3);">
+      <div style="background:var(--accent); padding:10px 16px;">
+        <span style="font-family:'Bebas Neue',cursive; letter-spacing:2px; font-size:15px; color:#1a1a1a;">✂ TEENS 13–17 — WALK-IN PRICE LIST</span>
+      </div>
+      <div style="padding:12px 16px;">
+        <div style="margin-bottom:6px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--accent);">Haircuts</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">All Round Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Taper Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">One Level</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Bald Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Mohawk</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Flat Top</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Big Chop</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Buzz Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Low Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Skin Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Ladies Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,000</span></div>
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Grooming</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Eyebrows Shave</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,000</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Eyebrow Wax</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Tint Eyebrows</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,000</span></div>
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Lashes</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Singles Eye Lash</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$3,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Clusters</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$4,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Strip</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$2,500</span></div>
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Optional Extra</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:14px;color:#f0f0f0;">Custom Design</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$500+</span></div>
+      </div>
+    </div>
 
-        <!-- Optional Extra label -->
-        <div style="margin-top:12px; margin-bottom:4px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--accent);">Optional Extra</div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Dye</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$300</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Beard Dye</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$200</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
-          <span style="font-size:14px; color:#f0f0f0;">Warm Towel</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$500</span>
-        </div>
-        <div style="display:flex; justify-content:space-between; padding:8px 0;">
-          <span style="font-size:14px; color:#f0f0f0;">Custom Designs</span>
-          <span style="font-size:14px; color:var(--accent); font-weight:700; white-space:nowrap; margin-left:12px;">$100+</span>
-        </div>
-
+    <!-- KIDS Walk-In & Appointment Price List -->
+    <div style="background:#1a1a1a; border-radius:10px; overflow:hidden; margin-bottom:16px; border:1px solid rgba(200,25,45,0.3);">
+      <div style="background:var(--accent); padding:10px 16px;">
+        <span style="font-family:'Bebas Neue',cursive; letter-spacing:2px; font-size:15px; color:#1a1a1a;">👦 KIDS — WALK-IN &amp; APPOINTMENT</span>
+      </div>
+      <div style="padding:12px 16px;">
+        <div style="margin-bottom:6px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--accent);">Haircuts</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">All Round Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Taper Fade</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">One Level</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Bald Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Mohawk</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Flat Top</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Big Chop</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Buzz Cut</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">School Boy Trim</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$1,500</span></div>
+        <div style="margin-top:12px;margin-bottom:6px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--accent);">Optional Extra</div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.07);"><span style="font-size:14px;color:#f0f0f0;">Line Up</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$500+</span></div>
+        <div style="display:flex;justify-content:space-between;padding:8px 0;"><span style="font-size:14px;color:#f0f0f0;">Custom Design</span><span style="font-size:14px;color:var(--accent);font-weight:700;white-space:nowrap;margin-left:12px;">$500+</span></div>
       </div>
     </div>
 
@@ -790,7 +819,7 @@ const firebaseConfig = {
   // ========== AUTH ==========
   // AUTHORISED ADMIN UID — set this to the Google account UID of your admin
   // Find it in Firebase Console → Authentication → Users after first login
-  const ADMIN_UID = "JCG0H80unjTS8Nz78kBprskk62L2";
+  const ADMIN_UID = "Yhivyy7j30RsXulnHJSJ1oqSCpm2";
 
   function login() {
     document.getElementById('adminLoginModal').style.display = 'flex';
@@ -961,18 +990,18 @@ const firebaseConfig = {
   });
 
   // ========== BUSINESS HOURS ==========
-  // Appointment days: Mon, Wed, Fri | Walk-in days: Tue, Thu, Sat | Closed: Sun
+  // Appointment days: Any day | Walk-in days: Any day | Closed: None
   const businessHours = {
-    'Monday': { open: '10:00 AM', close: '7:00 PM' },
-    'Tuesday': null,   // Walk-in only — no online appointments
-    'Wednesday': { open: '10:00 AM', close: '7:00 PM' },
-    'Thursday': null,  // Walk-in only — no online appointments
-    'Friday': { open: '10:00 AM', close: '7:00 PM' },
-    'Saturday': null,  // Walk-in only — no online appointments
-    'Sunday': null
+    'Monday':    { open: '12:00 PM', close: '9:00 PM' },
+    'Tuesday':   { open: '12:00 PM', close: '9:00 PM' },
+    'Wednesday': { open: '12:00 PM', close: '9:00 PM' },
+    'Thursday':  { open: '12:00 PM', close: '9:00 PM' },
+    'Friday':    { open: '12:00 PM', close: '9:00 PM' },
+    'Saturday':  { open: '12:00 PM', close: '9:00 PM' },
+    'Sunday':    { open: '1:00 PM',  close: '8:00 PM' }
   };
 
-  const walkInDays = ['Tuesday', 'Thursday', 'Saturday'];
+  const walkInDays = []; // No walk-in-only days — appointments accepted any day
 
   // ========== SERVICE DURATIONS ==========
   const serviceDurations = {
@@ -1482,7 +1511,7 @@ const firebaseConfig = {
     const closeMinutes = convertToMinutes(business.close);
 
     try {
-      const SLOT_INTERVAL = 35; // fixed 35-minute slot intervals
+      const SLOT_INTERVAL = 30; // fixed 30-minute slot intervals
       const snapshot = await db.collection("bookings").where("date", "==", date).get();
       const bookings = snapshot.docs.map(doc => {
         const bookedTime = convertToMinutes(normalizeTimeStr(doc.data().time));
@@ -1518,7 +1547,7 @@ const firebaseConfig = {
         return `${displayH}:${min.toString().padStart(2, "0")} ${ampm}`;
       }
 
-      const SLOT_DISPLAY_DURATION = 35; // always show 35-min window on label
+      const SLOT_DISPLAY_DURATION = 30; // always show 30-min window on label
       let t = openMinutes;
       while (t + SLOT_INTERVAL <= closeMinutes + 1) {
         const slotEnd = t + SLOT_DISPLAY_DURATION;
@@ -1601,13 +1630,13 @@ const firebaseConfig = {
 
         return db.collection('bookings').where('date', '==', date).get()
           .then((querySnapshot) => {
-            const SLOT_INTERVAL = 35;
+            const SLOT_INTERVAL = 30;
             const newServiceEndTime = selectedMinutes + SLOT_INTERVAL;
 
             for (let doc of querySnapshot.docs) {
               let bookedTime = doc.data().time.trim().replace(/\s+/g, ' ');
               let bookedMinutes = convertToMinutes(bookedTime);
-              let bookedEndTime = bookedMinutes + SLOT_INTERVAL;
+              let bookedEndTime = bookedMinutes + 30;
 
               if (selectedMinutes < bookedEndTime && bookedMinutes < newServiceEndTime) return false;
             }
@@ -2002,9 +2031,17 @@ const firebaseConfig = {
   function renderWalkInSlots() {
     const container = document.getElementById('walkInSlotsDisplay');
     if (!container) return;
-    const OPEN = 10 * 60;      // 10:00 AM in minutes
-    const CLOSE = 18 * 60;     // 6:00 PM in minutes
-    const INTERVAL = 35;
+    const now = new Date();
+    const day = now.toLocaleDateString('en-US', { weekday: 'long' });
+    let OPEN, CLOSE;
+    if (day === 'Sunday') {
+      OPEN = 13 * 60;   // 1:00 PM
+      CLOSE = 20 * 60;  // 8:00 PM
+    } else {
+      OPEN = 12 * 60;   // 12:00 PM
+      CLOSE = 21 * 60;  // 9:00 PM
+    }
+    const INTERVAL = 30;
     function fmt(m) {
       const h = Math.floor(m / 60);
       const min = m % 60;
@@ -2014,7 +2051,7 @@ const firebaseConfig = {
     }
     let html = '';
     for (let t = OPEN; t < CLOSE; t += INTERVAL) {
-      html += `<span style="background:#2b2b2b; border:1px solid rgba(200,25,45,0.4); border-radius:4px; padding:4px 10px; font-size:12px; color:var(--accent); font-weight:700; font-family:'Barlow',sans-serif;">${fmt(t)}</span>`;
+      html += `<span style="background:#2b2b2b; border:1px solid rgba(200,25,45,0.4); border-radius:4px; padding:4px 10px; font-size:12px; color:var(--accent); font-weight:700; font-family:'Barlow',sans-serif;">${fmt(t)} - ${fmt(t + INTERVAL)}</span>`;
     }
     container.innerHTML = html;
   }
